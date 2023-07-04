@@ -25,3 +25,5 @@ hugo serve
 - Makes rss feed for the entire site at ```/index.xml```
 - Stylesheet is in ```/static/css/style.css```
 
+## Credit
+This theme is based on [hugo-cat](https://github.com/httpsecure/hugo-cat) theme.
