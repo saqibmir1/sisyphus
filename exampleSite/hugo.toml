@@ -1,0 +1,38 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = "My Hugo Site"
+theme = 'sisyphus'
+
+[params]
+ava = "/img/ava.jpg"
+owner ="Sisyphus"
+talk = "Hi! I'm Sisyphus. Welcome to my website!"
+blogSection = ["blog"]
+description = "Hi, my name is Sisyphus and this is my personal website."
+favicon = "/img/logo.svg"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Blog"
+url = "/blog/"
+weight = 2
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 3
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 4
+
+[[menu.main]]
+name = "Git"
+url = "https://github.com/<your-username>"
+weight = 5
+

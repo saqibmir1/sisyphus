@@ -1,0 +1,11 @@
+<header>
+    <div class="header">
+     <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title  | htmlEscape }}</a></h1>
+     <div class="header-link">
+       {{ range .Site.Menus.main }}
+       <div class="menu-item"><a class="link" href="{{ .URL | safeURL }}">{{ .Name | htmlEscape }}</a></div>
+       {{ end }}
+     </div>
+     <hr>
+   </div>
+</header>

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div>
+    <h2 class="head-blog">Blogs</h2>
+    <p>Welcome to my blog!</p>
+
+    <ul>
+        {{ range .Pages }}
+        <li>
+            <span>{{ dateFormat "Jan 2, 2006" .Date }}</span>
+            <a class="blog-title" href="{{ .RelPermalink | safeURL }}">{{ .Title | htmlEscape }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

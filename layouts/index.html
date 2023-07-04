@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+{{ partial "ava.html" . }}
+
+
+<body>
+    <h2>Introduction</h2>
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum lobortis nisl eget dignissim. Integer hendrerit nibh
+       quis nibh condimentum dictum. Phasellus pulvinar, elit id mollis tristique, nisi arcu dignissim ante, in pellentesque lectus 
+       eros ac nisl. Suspendisse maximus felis et feugiat malesuada. Nulla malesuada libero nisl, at aliquet nunc porta vel. Quisque 
+       a dui ullamcorper, pulvinar leo in, scelerisque turpis. Suspendisse aliquam faucibus lectus, quis egestas tellus suscipit at.</p>
+
+      <p>Praesent tristique ultricies libero at sollicitudin. In libero sapien, pretium a nisl eu, pretium varius massa. Class aptent
+       taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hendrerit nunc non facilisis rutrum. Aenean 
+       facilisis ultrices dictum. Ut pulvinar cursus dui. Aliquam nulla dui, aliquam id mollis malesuada, posuere sed urna. Morbi ante 
+       tellus, convallis id velit vel, cursus cursus est. Praesent aliquam sem et euismod auctor. Suspendisse potenti. Aliquam vitae
+        lacinia metus, eget porttitor metus. Curabitur urna mauris, egestas a placerat et, pulvinar in eros. Morbi vel consequat metus,
+         id faucibus lectus. Pellentesque blandit aliquam sapien, vitae accumsan sapien volutpat non. Etiam maximus hendrerit nisl nec 
+         aliquam. Suspendisse potenti. </p>
+
+    
+    
+    <h2>Blog</h2>
+    <p>I have this <a href="/blog">blog</a> where I post all about x,y and z. Each article includes a <a href="mailto:yourmail@example.com">reply-to</a> link at the end, so you can share your thoughts with me via email.</p>
+    <h2>My Blog Entries</h2>
+    <ul>
+        {{ range first 10 (where .Site.RegularPages "Section" "blog") }}
+          <li><time>[{{ .Date.Format "January 2, 2006" }}]</time> - <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+      
+      <a class="biglink" href="/blog">→ More articles...</a><br>
+    
+    <a href="https://example.com/index.xml"><button class="button">Subscribe via rss</button></a>
+    
+    <br>
+    
+    
+    <!--projects-->
+    <h2>Projects</h2>
+    <p>I have a few repositories, mostly for linux. You can check the source code of my projects on my github.</p>
+    <a class="biglink" href="/projects">→ See my Projects</a>
+    <br><br>
+    
+    
+    </body>
+    
+
+{{ end }}
+

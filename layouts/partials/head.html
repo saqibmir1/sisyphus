@@ -1,0 +1,21 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <link rel="icon" type="image/x-icon" href="/img/icon.svg">
+    {{ block "head" . }}
+    {{ end }}
+</head>
+
+<title>
+    {{ if .IsHome }}
+     {{ .Site.Title | htmlEscape }}
+   {{ else if .Page.Title }}
+     {{ .Page.Title | htmlEscape }} | {{ .Site.Title | htmlEscape }}
+   {{ else }}
+     {{ .Site.Title | htmlEscape }}
+   {{ end }}
+</title> 
+<script src="js/quotes.js"></script>
