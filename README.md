@@ -21,7 +21,7 @@ hugo serve
 ```
 
 ## Stuff
-- Change the default parameters in ```hugo.toml```
+- Change the basic settings/menu configs etc  in ```hugo.toml```
 - Makes rss feed for the entire site at ```/index.xml```
 - Stylesheet is in ```/static/css/style.css```
 
