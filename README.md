@@ -1,5 +1,8 @@
-# Sisyphus Hugo Theme
+## Sisyphus Hugo Theme
 A minimal Hugo theme that i use for my [personal website](https://saqibmir1.github.io)
+
+## Screenshot
+![theme screenshot][images/screenshot.png]
 
 ## Get Started
 
